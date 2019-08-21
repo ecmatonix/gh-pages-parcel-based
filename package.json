@@ -7,6 +7,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm run format:check",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g \".commitlintrc.json\""
     }
   },
