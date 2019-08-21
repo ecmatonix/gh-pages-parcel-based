@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "format": "prettier --write \"**/*.{json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
