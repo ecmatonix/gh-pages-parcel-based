@@ -5,6 +5,11 @@
     "format:check": "prettier --check \"**/*.{json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g \".commitlintrc.json\""
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "husky": "^3.0.4",
